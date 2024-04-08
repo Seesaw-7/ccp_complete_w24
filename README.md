@@ -1,2 +1,2 @@
-# ccp_complete_w24
-Common Course Project for SI 539 Web Design, Umich
+# ccp_tablet_w24
+Coursework for SI539 Common Class Project

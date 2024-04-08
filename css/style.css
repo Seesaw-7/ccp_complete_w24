@@ -1,0 +1,155 @@
+body {
+    background-color: #F3CCD7;
+    /* font-family:  "Lucida Console", "Courier New", monospace; */
+  }
+
+#main{
+  color: black;
+}
+
+p{
+  line-height: 200%;
+}
+
+h1 { 
+    font-size: xx-large;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 60px; 
+  }
+
+h2,h3 { 
+    font-size: x-large;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+  }
+  
+h2, h3 { 
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding: 10px 0; 
+}
+
+h3 {
+  font-size: large;
+}
+
+img{
+  border: solid 5px #756460;
+  padding: 10px;
+  margin: 50px 20px;
+  border-radius: 30px;
+  /* max-width: 100%; */
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
+li{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+a[aria-current="page"] {
+  color: #fff;
+  background-color: black;
+  /* border-bottom: 2px solid #0056b3; */
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) { 
+  nav ul {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  #main {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+
+  #main div{
+    margin: 5%;
+  }
+
+  a {
+    padding: 12px 24px; 
+    font-size: 1rem; 
+  }
+}
+
+
+@media (min-width: 1024px) {
+  #main {
+      grid-template-columns: repeat(3, 1fr); 
+  }
+
+  #main div{
+    margin: 5%;
+  }
+
+  a {
+    padding: 12px 24px; 
+    font-size: 1rem; 
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important; 
+    transition-duration: 0s !important;
+  }
+}
+
+.blend-mode {
+  background-blend-mode: multiply;
+}
+
+#main {
+  backdrop-filter: blur(20px);
+}
